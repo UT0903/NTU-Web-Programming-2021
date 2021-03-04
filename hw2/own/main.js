@@ -24,12 +24,10 @@ let i = 0;
 function changePic(next) {
     //console.log(i)
     if (next === 1 && i < href.length - 1) {
-        i += 1
-        document.getElementById("display").src = href[i]
+        document.getElementById("display").src = href[++i]
     }
     else if (next === 0 && i > 0) {
-        i -= 1
-        document.getElementById("display").src = href[i]
+        document.getElementById("display").src = href[--i]
     }
     resetBtn()
     resetLink()
