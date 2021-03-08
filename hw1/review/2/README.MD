@@ -1,0 +1,4 @@
+### Reference links to the images:
+reference: https://external-preview.redd.it/bFa3YtoB9WXgujOL5Rwwh6dyhAV2mUhEttsqbTXwfkk.jpg?auto=webp&s=7a68a0147649f09f9b799c681e24cb0885bddfb4  
+music cover: https://images.genius.com/0327e4a856f14b2430e6e1a9333b1f1f.1000x1000x1.jpg  
+background pic: https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/754c5436-8761-437a-b826-c36e8cc6edd6/d4xmmg4-883c5c3d-2e64-445f-8dc4-a7c4eef8f41c.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNzU0YzU0MzYtODc2MS00MzdhLWI4MjYtYzM2ZThjYzZlZGQ2XC9kNHhtbWc0LTg4M2M1YzNkLTJlNjQtNDQ1Zi04ZGM0LWE3YzRlZWY4ZjQxYy5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.XzVtgmHclCQDxcAIKviSloTpSN3_NpSibEvcm9uXwz0  

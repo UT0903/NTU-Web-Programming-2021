@@ -1,0 +1,115 @@
+
+
+html {
+    background-color: rgb(116, 180, 116);
+}
+#player {
+    position: relative;
+    top: 50px;
+    width: 550px;
+    height: 550px;
+    margin: 0 auto;
+    border-radius: 10px;
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.2));
+    background: url("http://4.bp.blogspot.com/-pcPjBBdE_K8/U7v4oEX3M8I/AAAAAAAAD2I/6dWyzgiPzkQ/s1600/Clean+BAndit+Album+.jpg");
+    background-repeat: no-repeat;
+    background-size: 550px;
+    z-index: 1;
+}
+
+.control-board {
+    position: absolute;
+    bottom: 0em;
+    height: 210px;
+    width: 550px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+.fa-heart {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+.song-name {
+    position: absolute;
+    top: 40px;
+    right: 210px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: rgb(0, 41, 0);
+}
+
+.author {
+    /* position: absolute; */
+    /* top: 115px; */
+    position: absolute;
+    top: 75px;
+    right: 100px;
+    font-size: 15px;
+    color: rgb(116, 180, 116);
+    letter-spacing: 3px;
+}
+
+.time {
+    position: absolute;
+    color: rgb(0, 41, 0);
+    top: 10px;
+}
+
+.start {
+    left: 30px;
+}
+
+.end {
+    right: 30px;
+}
+
+.total-length {
+    top: 35px;
+    left: 70px;
+    height: 8px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: rgb(179, 218, 179);
+}
+.current-length {
+    /* position: absolute; */
+    top: 35px;
+    left: 70px;
+    height: 8px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgb(116, 180, 116);
+}
+
+.options {
+    position: absolute;
+    bottom: 20px;
+    width: 550px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 10px;
+    color: rgb(116, 180, 116);
+}
+
+.options > .fas:hover {
+    color: rgb(133, 251, 133);
+    font-size: 25px;
+}
+
+.fa-align-justify {
+    position: absolute;
+    left: 20px;
+}
+
+.fa-plus {
+    position: absolute;
+    right: 20px;
+}

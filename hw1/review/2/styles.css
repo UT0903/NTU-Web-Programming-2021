@@ -1,0 +1,201 @@
+html { 
+  background: url(image/gray-bg.png) no-repeat center center fixed; 
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 11px;
+  font-family: 'Open Sans';
+  margin-top: 3px;
+  font-weight: 400;
+  color: #777;
+}
+  
+h4 {
+  margin: 0 0 0px 0px;
+  margin-left: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  font-size: 20px;
+  line-height: 18px;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  color: #fff;
+}
+
+h5 {
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Lucida Sans Unicode';
+}
+
+.screen {
+  background-color: #4d4d4d;
+  padding: 0;
+  height: 100%;
+  width: 380px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-top: 0;
+	transform: translate(-50%, 0);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  padding-top: 30px;;
+  /* margin: 30px 0; */
+}
+
+.topBar {
+  background-color: #4d4d4d;
+  height: 200px;
+  width: 380px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+  display: inline;
+}
+
+.coverImage {
+  width: 310px;
+  height: 310%;
+  padding: 0;
+  margin-top: 50px;
+  margin-left: 35px;
+  margin-right: 35px;
+  position: absolute;
+  display: block;
+}
+
+img {
+  display: block;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  width: auto; /* you can use % */
+=======
+  width: auto;
+>>>>>>> ada7e2e... UI design of Music Player: Spotify
+=======
+  width: auto;
+>>>>>>> 808ed554d1aa1f7b6f3d2aaa15f65ee23924108b
+  height: auto;
+  max-width: 310px;
+  max-height: 310px;
+}
+
+.info {
+  width: 300px;
+  position: absolute;
+  left: 40px;
+  top: 500px;
+  display: inline;
+  /* transition: all 0.3s ease-in; */
+}
+
+.progress-bar { 
+  position: absolute;
+  width : 300px;
+  top: 570px;
+  left: 40px;
+}
+
+/* 整條progress */
+#all-progress { 
+  width : 100%;
+  border-radius : 2px;
+  height : 4px;
+  background-color : #666261;
+  overflow : visible;
+}
+
+/* 已播放progress */
+#current-progress {
+  width : 50%;
+  border-radius : 2px;
+  height : 4px;
+  background-color : #fff;
+}
+
+/* 拖放 */
+#progress-button {
+  width: 10px;
+  height: 10px;
+  display: block;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+  top:-3px;
+  float: right;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 1px 1px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 1px;
+}
+
+.btn-heart {
+  background-color: transparent;
+  border: none;
+  color: #57b661;
+  font-size: 20px;
+}
+
+.player {
+  background: none;
+  text-align: center;
+  color: #fff;
+  font-size: 26px;
+  line-height: 26px;
+  width: 300px;
+  height: 35px;
+  position: absolute;
+  bottom: 100px;
+  margin-left: 40px;
+  margin-top: 0;
+  z-index: 10;
+  top: 600px;
+  border-spacing: 0;
+}
+
+.player td {
+  width: 72px;
+}
+
+.footer {
+  background: none;
+  text-align: center;
+  color: #6d6d6d;
+  font-size: 15px;
+  line-height: 15px;
+  height: 45px;
+  width: 300px;
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+  top: 685px;
+  z-index: 20;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.divider-top {
+  width: 70px;
+  height: auto;
+}
+
+.divider-bottom {
+  width: 80px;
+  height: auto;
+  display: inline-block;
+}
+
+.divider-info {
+  width: 150px;
+  height: auto;
+}
