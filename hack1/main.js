@@ -32,6 +32,7 @@ comment_button.addEventListener('click', (event) => {
 	comment_num.innerHTML = count + "則留言"
 	comment_input.value = ''
 	comment_button.style["background-color"] = "#cccccc"
+  comment_button.disabled = true
 });
 
 comment_input.addEventListener('focusin', (event) => {
