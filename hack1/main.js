@@ -8,11 +8,11 @@ comment_input.addEventListener('input', (event) => {
   
   if(comment_input.value.trim() != ''){
   	comment_button.style["background-color"] = "#065fd4"
-  	comment_button.disabled = false;
+  	comment_button.disabled = false
   }
   else{
   	comment_button.style["background-color"] = "#cccccc"
-  	comment_button.disabled = true;
+  	comment_button.disabled = true
   }
 
 });
@@ -26,7 +26,7 @@ const front_string = "<div class=\"comment\"> \
                             <p class=\"comment-text\">"
 const back_string = "</p> </div> </div>"                            
 comment_button.addEventListener('click', (event) => {
-	//console.log('comment')
+	console.log('comment')
 	comment_group.innerHTML += front_string + comment_input.value.trim() + back_string
 	count ++
 	comment_num.innerHTML = count + "則留言"
@@ -43,4 +43,6 @@ cancel_button.addEventListener('click', (event) => {
   comment_input.value = ''
   cancel_button.style["display"] = "none"
   comment_button.style["display"] = "none"
+  comment_button.style["background-color"] = "#cccccc"
+  comment_button.disabled = true
 });
