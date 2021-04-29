@@ -1,7 +1,7 @@
 import Cell from "./Cell";
 function Table({grid, setGrid}){
     const genCharArray = (id) => {
-        console.log(id);
+        //console.log(id);
         
         let temp = id;
         let str = String.fromCharCode((temp % 26) + 65);

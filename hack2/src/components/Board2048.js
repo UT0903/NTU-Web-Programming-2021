@@ -1,12 +1,16 @@
 import Row from './Row'
 
-export default function Board2048 ({ board}) {
+export default function Board2048 ({ board, gameOver}) {
 
     let boardClassName = "board";
     let infoClassName = "info";
     let outSentence = "No funding this year QAO";
     let phdSentence = "You should study a PhD!";
-
+    if(gameOver){
+        boardClassName += " game-over-board";
+        infoClassName += " game-over-wrapper";
+    }
+    
     return (
         <>
         <table className={boardClassName} id="board-full">

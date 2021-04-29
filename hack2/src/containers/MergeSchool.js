@@ -364,7 +364,7 @@ function MergeSchool() {
     return (
         <>      
             <Header steps={step} qs={qs_ranking} reset={initializeBoard} best_qs={best_qs_ranking}/>
-            <Board2048 className="wrapper" board={board}/>
+            <Board2048 className="wrapper" board={board} gameOver={gameover}/>
             <div className="btn-groups">
                 <div className="btn-useful" id="badend-btn" onClick={setBadEnd}>BadEnd</div>
                 <div className="btn-useful" id="goodend-btn" onClick={setGoodEnd}>GoodEnd</div>
