@@ -19,10 +19,10 @@ app.use((req, res, next) => {
   }
   return next()
 })
-writeLog('', true)
+
 // define routes
 app.use('/api/guess', guessRoute)
-
+writeLog('', true)
 
 const port = process.env.PORT || 4000
 

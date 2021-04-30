@@ -21,7 +21,16 @@ const getCurTimeSec = (date_ob) => {
 const writeLog = (write_msg, forceRestart= false) => {
     console.log('write log:', write_msg)
     if(forceRestart){
-        file_name = `${__dirname}/../logs/${getCurTime(new Date())}.log`
+        try{
+            if (!fs.existsSync('./server/logs')){
+                fs.mkdirSync('./server/logs', '0777')
+                console.log('mkdir finish!')
+            }
+        }
+        catch(error){}
+        finally{
+            file_name = `./server/logs/${getCurTimeSec(new Date())}.log`
+        }
     }
     else{
         fs.appendFile(file_name, write_msg + getCurTimeSec(new Date()) + '\n', function (err) {
