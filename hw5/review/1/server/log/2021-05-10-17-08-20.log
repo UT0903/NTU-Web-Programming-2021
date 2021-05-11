@@ -1,0 +1,6 @@
+{"message":"start number=6 2021-05-10-17-08-50","level":"info"}
+{"message":"guess 1112 2021-05-10-17-08-52","level":"error"}
+{"message":"guess 11 2021-05-10-17-08-54","level":"info"}
+{"message":"guess 6 2021-05-10-17-08-58","level":"info"}
+{"message":"end-game","level":"info"}
+{"message":"restart number=32 2021-05-10-17-09-00","level":"info"}
