@@ -149,12 +149,4 @@ const Body = () => {
     </Wrapper>
   );
 };
-/*
-<ContentPaper variant="outlined">
-        {messages.map((m, i) => (
-          <Typography variant="body2" key={m + i} style={{ color: m.color }}>
-            {m.message}
-          </Typography>
-        ))}
-      </ContentPaper>-->*/
 export default Body;
