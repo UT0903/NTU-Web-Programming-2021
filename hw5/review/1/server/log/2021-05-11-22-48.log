@@ -1,0 +1,17 @@
+{"message":"start number=47 2021-05-11-22-48-10","level":"info"}
+{"message":"guess 1 2021-05-11-22-48-12","level":"info"}
+{"message":"guess 2 2021-05-11-22-48-14","level":"info"}
+{"message":"guess 2 2021-05-11-22-48-15","level":"info"}
+{"message":"guess 100 2021-05-11-22-48-19","level":"info"}
+{"message":"guess 32 2021-05-11-22-48-46","level":"info"}
+{"message":"guess 32 2021-05-11-22-48-47","level":"info"}
+{"message":"guess NaN 2021-05-11-22-49-13","level":"error"}
+{"message":"guess NaN 2021-05-11-22-49-18","level":"error"}
+{"message":"guess 30 2021-05-11-22-49-23","level":"info"}
+{"message":"guess 70 2021-05-11-22-49-26","level":"info"}
+{"message":"guess 50 2021-05-11-22-49-29","level":"info"}
+{"message":"guess 40 2021-05-11-22-49-32","level":"info"}
+{"message":"guess 45 2021-05-11-22-49-35","level":"info"}
+{"message":"guess 47 2021-05-11-22-49-38","level":"info"}
+{"message":"end-game","level":"info"}
+{"message":"restart number=61 2021-05-11-22-49-40","level":"info"}
