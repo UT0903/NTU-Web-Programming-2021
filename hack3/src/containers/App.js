@@ -31,7 +31,7 @@ function App() {
     // fetch data from database via backend
     // coding here ...
     const ret = await instance.get('/getStations', {})
-    console.log('tmpData', ret.data.data)
+    //console.log('tmpData', ret.data.data)
     if (ret.data.message !== "success") {
       return;
     }
@@ -46,6 +46,9 @@ function App() {
     setCurrentStationId(station_id)
   }
   const calculateDistance = async () => {
+    const ret = await instance.get('/calculateDistance', {
+      start: start_station,
+      end: end_station})
     // send start and end stations to backend and get distance
     // coding here ...
   }
@@ -71,29 +74,33 @@ function App() {
         <div className="mode-selector">
 
           <span id="start-station-span">起始站</span>
-          <select id="start-select" className="start-station"> {/* you should add both onChange and value to attributes */}
+          <select id="start-select" className="start-station" value="" onChange={(e)=>{
+            console.log(e.target.value)
+            setStartStation(e.target.value)}
+          }> {/* you should add both onChange and value to attributes */}
             <optgroup label={keys[0]}>
               {data[keys[0]].map((item) => (
-                <option id={"start-group-" + item.station_id}>{item.station_name}</option>
+                <option value={item.station_name} id={"start-group-" + item.station_id}>{item.station_name}</option>
               ))}
             </optgroup>
             <optgroup label={keys[1]}>
               {data[keys[1]].map((item) => (
-                <option id={"start-group-" + item.station_id}>{item.station_name}</option>
+                <option value={item.station_name} id={"start-group-" + item.station_id}>{item.station_name}</option>
               ))}
             </optgroup>
           </select>
 
           <span id="end-station-span">終點站</span>
-          <select id="end-select" className="end-station"> {/* you should add both onChange and value to attributes */}
+          <select id="end-select" className="end-station" value="" onChange={(e)=>{
+            setEndStation(e.target.value)}}> {/* you should add both onChange and value to attributes */}
             <optgroup label={keys[0]}>
               {data[keys[0]].map((item) => (
-                <option id={"end-group-" + item.station_id}>{item.station_name}</option>
+                <option value={item.station_name} id={"end-group-" + item.station_id}>{item.station_name}</option>
               ))}
             </optgroup>
             <optgroup label={keys[1]}>
               {data[keys[1]].map((item) => (
-                <option id={"end-group-" + item.station_id}>{item.station_name}</option>
+                <option value={item.station_name} id={"end-group-" + item.station_id}>{item.station_name}</option>
               ))}
             </optgroup>
           </select>
