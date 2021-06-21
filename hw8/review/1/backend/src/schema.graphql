@@ -1,0 +1,47 @@
+type Query {
+  chatrooms(query: String!): Chatroom
+  users(query: String!): User
+}
+
+type Mutation {
+  createUser(name: String): User!
+  createChatroom(name: String): Chatroom!
+  updateChatroom(name:String, data: UpdateChatroomInput!): Chatroom!
+}
+
+type Subscription {
+  chatroom(name: String): ChatroomSubscriptionPayload
+}
+
+input UpdateChatroomInput {
+  sender: String!
+  body: String!
+}
+
+type User {
+  id: ID!
+  name: String!
+}
+
+type Chatroom {
+  id: ID!
+  name: String!
+  messages: [Message]
+}
+
+type Message {
+  id: ID!
+  sender: String!
+  body: String!
+}
+
+enum MutationType {
+  CREATED
+  UPDATED
+  DELETED
+}
+
+type ChatroomSubscriptionPayload {
+  mutation: MutationType!
+  data: Chatroom!
+}
